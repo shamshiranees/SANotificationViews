@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		427EACA5CC67939D13F60325 /* Pods_SANotificationViews_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC67320BAD7A488D42A2F22C /* Pods_SANotificationViews_Tests.framework */; };
+		511022271FFBA969003B005D /* tinyBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = 511022231FFBA968003B005D /* tinyBanner.png */; };
+		511022281FFBA969003B005D /* statusBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 511022241FFBA968003B005D /* statusBar.png */; };
+		511022291FFBA969003B005D /* SABanner.png in Resources */ = {isa = PBXBuildFile; fileRef = 511022251FFBA969003B005D /* SABanner.png */; };
+		5110222A1FFBA969003B005D /* permanent.png in Resources */ = {isa = PBXBuildFile; fileRef = 511022261FFBA969003B005D /* permanent.png */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -29,6 +33,10 @@
 
 /* Begin PBXFileReference section */
 		4EE5587DDDA0324D6F69AE8C /* Pods_SANotificationViews_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SANotificationViews_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		511022231FFBA968003B005D /* tinyBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tinyBanner.png; sourceTree = "<group>"; };
+		511022241FFBA968003B005D /* statusBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statusBar.png; sourceTree = "<group>"; };
+		511022251FFBA969003B005D /* SABanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SABanner.png; sourceTree = "<group>"; };
+		511022261FFBA969003B005D /* permanent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = permanent.png; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SANotificationViews_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SANotificationViews_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,12 +48,12 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		78822D60E42D77DBF10FAE21 /* Pods-SANotificationViews_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SANotificationViews_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SANotificationViews_Example/Pods-SANotificationViews_Example.release.xcconfig"; sourceTree = "<group>"; };
-		8660AFCC30B4FE3712067C8E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		92AC9D780F220265B1D06987 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8660AFCC30B4FE3712067C8E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		92AC9D780F220265B1D06987 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9E34018309E617981E0279FD /* Pods-SANotificationViews_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SANotificationViews_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SANotificationViews_Tests/Pods-SANotificationViews_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A6AEF580449C5BD0AE2F403A /* Pods-SANotificationViews_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SANotificationViews_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SANotificationViews_Tests/Pods-SANotificationViews_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CAEE729799211C1F9CFC073B /* Pods-SANotificationViews_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SANotificationViews_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SANotificationViews_Example/Pods-SANotificationViews_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D2F9AE6853483C38F379E594 /* SANotificationViews.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SANotificationViews.podspec; path = ../SANotificationViews.podspec; sourceTree = "<group>"; };
+		D2F9AE6853483C38F379E594 /* SANotificationViews.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SANotificationViews.podspec; path = ../SANotificationViews.podspec; sourceTree = "<group>"; };
 		EC67320BAD7A488D42A2F22C /* Pods_SANotificationViews_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SANotificationViews_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -118,6 +126,10 @@
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				511022261FFBA969003B005D /* permanent.png */,
+				511022251FFBA969003B005D /* SABanner.png */,
+				511022241FFBA968003B005D /* statusBar.png */,
+				511022231FFBA968003B005D /* tinyBanner.png */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for SANotificationViews";
@@ -251,6 +263,10 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				511022291FFBA969003B005D /* SABanner.png in Resources */,
+				511022271FFBA969003B005D /* tinyBanner.png in Resources */,
+				511022281FFBA969003B005D /* statusBar.png in Resources */,
+				5110222A1FFBA969003B005D /* permanent.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

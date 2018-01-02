@@ -99,17 +99,17 @@ open class SANotificationView: NSObject {
     }
     
     // MARK: - showSABanner
-    open class func showSABanner(title:String,message:String,image:UIImage,showTime:Int){
+    open class func showSABanner(title:String,message:String,textColor:UIColor,image:UIImage,backgroundColor:UIColor,showTime:Int){
         
         //SABarBgView
         mainInstance.SABarBgView.frame = CGRect(x: 0, y:0, width:  mainInstance.currentWindow().frame.width, height: 0)
-        mainInstance.SABarBgView.backgroundColor = .white
+        mainInstance.SABarBgView.backgroundColor = backgroundColor
         mainInstance.currentWindow().addSubview(mainInstance.SABarBgView)
         
         
         //SABarView
         mainInstance.SABarView.frame = CGRect(x: 0, y:0, width:  mainInstance.currentWindow().frame.width, height: 0)
-        mainInstance.SABarView.backgroundColor = .white
+        mainInstance.SABarView.backgroundColor = backgroundColor
         mainInstance.SABarView.layer.masksToBounds = true
         mainInstance.currentWindow().addSubview(mainInstance.SABarView)
         
@@ -120,7 +120,7 @@ open class SANotificationView: NSObject {
         mainInstance.SABarTitleLabel.textAlignment = .left
         mainInstance.SABarTitleLabel.font = UIFont(name: "AppleSDGothicNeo-Bold", size: 16)
         mainInstance.SABarTitleLabel.sizeToFit()
-        mainInstance.SABarTitleLabel.textColor = .black
+        mainInstance.SABarTitleLabel.textColor = textColor
         mainInstance.SABarTitleLabel.numberOfLines = 1
         mainInstance.SABarView.addSubview(mainInstance.SABarTitleLabel)
         
@@ -170,8 +170,19 @@ open class SANotificationView: NSObject {
         
         
     }
+    
+    // MARK: - showSABanner without bgcolor and text color
+    
+    open class func showSABanner(title:String,message:String,image:UIImage,showTime:Int){
+        
+        
+        showSABanner(title: title, message: message, textColor: .black, image: image, backgroundColor: .white, showTime: showTime)
+    }
+    
+    
+    
     // MARK: - showSATinyBanner
-    open class func showSATinyBanner(message:String,backgroundColor:UIColor,textColor:UIColor,showTime:Int)->UIView{
+    open class func showSATinyBanner(message:String,backgroundColor:UIColor,textColor:UIColor,showTime:Int){
         
         
         //statusBarView
@@ -223,14 +234,18 @@ open class SANotificationView: NSObject {
         if showTime == 0{}else{
             Timer.scheduledTimer(timeInterval: TimeInterval(showTime), target: self, selector: #selector(removeSATinyBanner), userInfo: nil, repeats: false)
         }
-        return mainInstance.statusBarView
+       
     }
     
     
+    
+   
+    
+    
     //MARK: - show permanent tiny banner
-    open class func showSATinyBanner(message:String,backgroundColor:UIColor,textColor:UIColor)->UIView{
+    open class func showSATinyBanner(message:String,backgroundColor:UIColor,textColor:UIColor){
         
-      return showSATinyBanner(message: message, backgroundColor: backgroundColor, textColor: textColor, showTime: 0)
+       showSATinyBanner(message: message, backgroundColor: backgroundColor, textColor: textColor, showTime: 0)
         
         
     }
@@ -238,13 +253,14 @@ open class SANotificationView: NSObject {
     //MARK:- Remove views
     @objc open class func removeStatusView(){
         
-        UIView.animate(withDuration: 0.3) {
+    
+        
+        UIView.animate(withDuration: 0.3, animations: {
             mainInstance.statusBarView.frame =  CGRect(x: 0, y:0, width: mainInstance.currentWindow().frame.width, height: 0)
             mainInstance.statusBarLabel.frame = CGRect(x: 0, y:0, width: mainInstance.currentWindow().frame.width, height: 0)
+        }) { (true) in
             mainInstance.statusBarView.window?.windowLevel = UIWindowLevelStatusBar-1
         }
-        
-        
         
     }
     

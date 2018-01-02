@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qaz-Sq-wHG">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--SANotificationViews-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SANotificationViews_Example" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,11 +20,98 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sampleBg" translatesAutoresizingMaskIntoConstraints="NO" id="ex9-4o-15X">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TvR-dZ-su2">
+                                <rect key="frame" x="34" y="319.5" width="109" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Status bar banner"/>
+                                <connections>
+                                    <action selector="statusBarBanner:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8y5-3b-2Lf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VcE-Li-fVB">
+                                <rect key="frame" x="250.5" y="319.5" width="72" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Tiny banner"/>
+                                <connections>
+                                    <action selector="tinyBanner:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="e8c-c2-NJz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Puo-pP-Gh9">
+                                <rect key="frame" x="204.5" y="407.5" width="164" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Remove permanent banner"/>
+                                <connections>
+                                    <action selector="removePermanentBanner:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ma0-sV-KbK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yun-n9-BdW">
+                                <rect key="frame" x="157.5" y="495.5" width="60" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="SABanner"/>
+                                <connections>
+                                    <action selector="saBanner:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BQx-41-iWx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdK-3p-48k">
+                                <rect key="frame" x="32.5" y="407.5" width="112" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Permanent banner"/>
+                                <connections>
+                                    <action selector="permanentBanner:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="V66-oP-mKv"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Puo-pP-Gh9" firstAttribute="top" secondItem="VcE-Li-fVB" secondAttribute="bottom" constant="60" id="2ig-6p-mRv"/>
+                            <constraint firstItem="Yun-n9-BdW" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="5bL-Xw-7u1"/>
+                            <constraint firstItem="VcE-Li-fVB" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="99" id="5oM-96-aPA"/>
+                            <constraint firstItem="Yun-n9-BdW" firstAttribute="top" secondItem="Puo-pP-Gh9" secondAttribute="bottom" constant="60" id="8TF-A3-12I"/>
+                            <constraint firstItem="TvR-dZ-su2" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="Gx2-em-biC"/>
+                            <constraint firstItem="VcE-Li-fVB" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="UJn-Qr-qUo"/>
+                            <constraint firstItem="KdK-3p-48k" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-99" id="Xkj-ny-8Lo"/>
+                            <constraint firstItem="Puo-pP-Gh9" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="99" id="c6q-t6-naa"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ex9-4o-15X" secondAttribute="bottom" id="cIj-wY-MqI"/>
+                            <constraint firstItem="KdK-3p-48k" firstAttribute="top" secondItem="TvR-dZ-su2" secondAttribute="bottom" constant="60" id="dDT-RL-f6g"/>
+                            <constraint firstItem="ex9-4o-15X" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="eTY-Mo-Zko"/>
+                            <constraint firstAttribute="trailing" secondItem="ex9-4o-15X" secondAttribute="trailing" id="f6x-vL-rZC"/>
+                            <constraint firstItem="TvR-dZ-su2" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-99" id="nZJ-VS-wNm"/>
+                            <constraint firstItem="ex9-4o-15X" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="uyB-pE-BWr"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="SANotificationViews" id="oRU-VJ-qCv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="455.19999999999999" y="118.29085457271366"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tGl-9T-Xjw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qaz-Sq-wHG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QhJ-OX-LxT">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.13725490200000001" green="0.33725490200000002" blue="0.46666666670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="vNF-fT-oYJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TpG-Bw-enV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-226" y="118"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="sampleBg" width="736" height="1308"/>
+    </resources>
 </document>
