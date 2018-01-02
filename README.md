@@ -36,12 +36,12 @@ SANotificationView.showSATinyBanner(message: "Please wait while loading...😊",
 ```
 
 ### SABanner
-![ScreenShot](https://raw.githubusercontent.com/shamshiranees/SANotificationViews/master/Example/SANotificationViews/SABanner.png)
+![ScreenShot](https://raw.githubusercontent.com/shamshiranees/SANotificationViews/master/Example/SANotificationViews/SABanner1.png)
 ```swift
 SANotificationView.showSABanner(title: "V.S Achuthananthan", message: "V.S Achuthananthan just liked the your post you shared", image: #imageLiteral(resourceName: "sampleImage"),  showTime: 3)
 
 //show SABanner with background color and text color
-
+SANotificationView.showSABanner(title: "V.S Achuthananthan", message: "V.S Achuthananthan just liked the your post you shared", textColor: .black, image: #imageLiteral(resourceName: "sampleImage"), backgroundColor: .white, showTime: 3)
 
 ```
 
