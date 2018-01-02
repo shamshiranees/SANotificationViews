@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SANotificationViews_Example' do
+  pod 'SANotificationViews', :path => '../'
+
+  target 'SANotificationViews_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
