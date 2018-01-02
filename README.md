@@ -21,7 +21,13 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'SANotificationViews'
 ```
-Or add
+or add [SANotificationViews](https://github.com/shamshiranees/SANotificationViews/blob/master/SANotificationViews/Classes/SANotificationViews.swift) into your project directory
+## Usage
+### SAStatusView
+![ScreenShot](https://raw.githubusercontent.com/shamshiranees/SANotificationViews/master/Example/SANotificationViews/statusBar.png)
+```swift
+SANotificationView.showSAStatusBarBanner(message: "This is status bar banner...", backgroundColor: .black, textColor: .white, showTime: 2)
+```
 ## Author
 
  shamshir.anees@citrusinformatics.com
