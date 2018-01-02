@@ -228,9 +228,9 @@ open class SANotificationView: NSObject {
     
     
     //MARK: - show permanent tiny banner
-    open class func showSATinyBanner(message:String,backgroundColor:UIColor,textColor:UIColor){
+    open class func showSATinyBanner(message:String,backgroundColor:UIColor,textColor:UIColor)->UIView{
         
-        showSATinyBanner(message: message, backgroundColor: backgroundColor, textColor: textColor, showTime: 0)
+      return showSATinyBanner(message: message, backgroundColor: backgroundColor, textColor: textColor, showTime: 0)
         
         
     }
