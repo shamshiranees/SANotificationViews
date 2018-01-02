@@ -25,12 +25,12 @@ or add [SANotificationViews.swift](https://github.com/shamshiranees/SANotificati
 
 ## Usage
 ### SAStatusView
-![ScreenShot](https://raw.githubusercontent.com/shamshiranees/SANotificationViews/master/Example/SANotificationViews/statusBar.png)
+![ScreenShot](https://raw.githubusercontent.com/shamshiranees/SANotificationViews/master/Example/SANotificationViews/statusBar1.png)
 ```swift
 SANotificationView.showSAStatusBarBanner(message: "This is status bar banner...", backgroundColor: .black, textColor: .white, showTime: 2)
 ```
 ### SATinybanner
-![ScreenShot](https://raw.githubusercontent.com/shamshiranees/SANotificationViews/master/Example/SANotificationViews/tinyBanner.png)
+![ScreenShot](https://raw.githubusercontent.com/shamshiranees/SANotificationViews/master/Example/SANotificationViews/tinyBanner1.png)
 ```swift
 SANotificationView.showSATinyBanner(message: "Please wait while loading...😊", backgroundColor: .black, textColor: .white, showTime: 2)
 ```
