@@ -21,13 +21,41 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'SANotificationViews'
 ```
-or add [SANotificationViews](https://github.com/shamshiranees/SANotificationViews/blob/master/SANotificationViews/Classes/SANotificationViews.swift) into your project directory
+or add [SANotificationViews.swift](https://github.com/shamshiranees/SANotificationViews/blob/master/SANotificationViews/Classes/SANotificationViews.swift) file into your project directory.
+
 ## Usage
 ### SAStatusView
 ![ScreenShot](https://raw.githubusercontent.com/shamshiranees/SANotificationViews/master/Example/SANotificationViews/statusBar.png)
 ```swift
 SANotificationView.showSAStatusBarBanner(message: "This is status bar banner...", backgroundColor: .black, textColor: .white, showTime: 2)
 ```
+### SATinybanner
+![ScreenShot](https://raw.githubusercontent.com/shamshiranees/SANotificationViews/master/Example/SANotificationViews/tinyBanner.png)
+```swift
+SANotificationView.showSATinyBanner(message: "Please wait while loading...😊", backgroundColor: .black, textColor: .white, showTime: 2)
+```
+
+### SABanner
+![ScreenShot](https://raw.githubusercontent.com/shamshiranees/SANotificationViews/master/Example/SANotificationViews/SABanner.png)
+```swift
+SANotificationView.showSABanner(title: "V.S Achuthananthan", message: "V.S Achuthananthan just liked the your post you shared", image: #imageLiteral(resourceName: "sampleImage"),  showTime: 3)
+
+//show SABanner with background color and text color
+
+
+```
+
+### SAPermanentView
+```swift
+//Show view
+ SANotificationView.showSATinyBanner(message: "Permanent Banner...😊", backgroundColor: .black, textColor: .white)
+ 
+//Remove view
+SANotificationView.removeSATinyBanner()
+
+```
+
+
 ## Author
 
  shamshir.anees@citrusinformatics.com
