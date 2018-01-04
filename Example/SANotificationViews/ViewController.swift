@@ -51,10 +51,10 @@ class ViewController: UIViewController {
     
     @IBAction func saBanner(_ sender: Any) {
         
-         SANotificationView.showSABanner(title: "V.S Achuthananthan", message: "V.S Achuthananthan just liked the your post you shared", image: #imageLiteral(resourceName: "sampleImage"),  showTime: 3)
+         SANotificationView.showSABanner(title: "V.S Achuthananthan", message: "V.S Achuthananthan just liked the post you shared", image: #imageLiteral(resourceName: "sampleImage"),  showTime: 3)
         
         //show SABanner with background color and text color
-       // SANotificationView.showSABanner(title: "V.S Achuthananthan", message: "V.S Achuthananthan just liked the your post you shared", textColor: .black, image: #imageLiteral(resourceName: "sampleImage"), backgroundColor: .white, showTime: 3)
+       // SANotificationView.showSABanner(title: "V.S Achuthananthan", message: "V.S Achuthananthan just liked the post you shared", textColor: .black, image: #imageLiteral(resourceName: "sampleImage"), backgroundColor: .white, showTime: 3)
     }
     
     
